@@ -161,3 +161,14 @@ section[id]{ scroll-margin-top: 90px; }
     border: 1px solid rgba(0,0,0,0.08);
     overflow: hidden;
 }
+
+.icon-pill.numbered {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 20px; /* control icon size */
+}

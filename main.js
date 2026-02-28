@@ -47,7 +47,6 @@ function scrollToId(id){
 // =============================
 el("year").textContent = new Date().getFullYear();
 el("bankAcc").textContent = BANK_ACCOUNT;
-el("waDisplay").textContent = "+" + WA_NUMBER;
 setProgress();
 
 // Smooth scrolling for nav links

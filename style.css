@@ -1,1 +1,163 @@
-/* Add styles here */
+:root{
+    --green-900:#0b3d2e;
+    --green-800:#0f5a3f;
+    --green-700:#117a4b;
+    --green-600:#169b5f;
+    --green-100:#e9f7ef;
+    --ink:#0f172a;
+}
+
+body{ color: var(--ink); }
+.bg-soft-green{ background: var(--green-100); }
+.text-green{ color: var(--green-800); }
+.btn-green{
+--bs-btn-bg: var(--green-700);
+--bs-btn-border-color: var(--green-700);
+--bs-btn-hover-bg: var(--green-800);
+--bs-btn-hover-border-color: var(--green-800);
+--bs-btn-active-bg: var(--green-900);
+--bs-btn-active-border-color: var(--green-900);
+--bs-btn-color: #fff;
+--bs-btn-hover-color:#fff;
+}
+.btn-outline-green{
+--bs-btn-color: var(--green-800);
+--bs-btn-border-color: var(--green-800);
+--bs-btn-hover-bg: var(--green-800);
+--bs-btn-hover-border-color: var(--green-800);
+--bs-btn-hover-color: #fff;
+}
+
+.navbar{
+backdrop-filter: saturate(180%) blur(10px);
+background: rgba(255,255,255,0.85) !important;
+border-bottom: 1px solid rgba(15,90,63,0.12);
+}
+
+.hero{
+background:
+    radial-gradient(900px 500px at 20% 20%, rgba(22,155,95,0.20), transparent 60%),
+    radial-gradient(900px 500px at 80% 10%, rgba(17,122,75,0.18), transparent 55%),
+    linear-gradient(180deg, #ffffff 0%, var(--green-100) 100%);
+padding-top: 6.5rem;
+padding-bottom: 3.5rem;
+}
+
+.badge-soft{
+background: rgba(22,155,95,0.12);
+color: var(--green-800);
+border: 1px solid rgba(22,155,95,0.25);
+}
+
+.section{
+padding: 4rem 0;
+}
+
+.card-soft{
+border: 1px solid rgba(15,90,63,0.12);
+box-shadow: 0 10px 25px rgba(2, 6, 23, 0.05);
+}
+
+.icon-pill{
+width: 44px;
+height: 44px;
+display: inline-flex;
+align-items:center;
+justify-content:center;
+border-radius: 12px;
+background: rgba(22,155,95,0.12);
+border: 1px solid rgba(22,155,95,0.25);
+color: var(--green-800);
+}
+
+.img-wrapper {
+    padding: 6px;
+    border: 2px dashed rgba(15,90,63,0.25);
+    border-radius: 16px;
+}
+
+.img-dokumentasi {
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.timeline-dot{
+width: 10px; height: 10px; border-radius: 50%;
+background: var(--green-700);
+margin-top: .45rem;
+flex: 0 0 auto;
+}
+.timeline-line{
+width: 2px; background: rgba(15,90,63,0.25);
+margin: 0 14px;
+}
+
+.footer{
+background: #0b3d2e;
+color: rgba(255,255,255,0.9);
+}
+.footer a{ color: rgba(255,255,255,0.9); }
+.small-muted{ color: rgba(15,23,42,0.65); }
+
+/* Smooth anchor offset due to fixed navbar */
+section[id]{ scroll-margin-top: 90px; }
+
+.qris-sedekah {
+    width: 350px;
+}
+
+.img-dokumentasi ~ span {
+    font-size: small;
+    font-style: italic;
+    color: grey;
+  }
+
+.nav-pills .nav-link {
+    border-radius: 25px;
+    padding: 8px 20px;
+    color: #117a4b;
+    background-color: #e6f4ee;
+    transition: all 0.2s ease;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #cfe9dc;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #117a4b;
+    color: white;
+}
+
+/* CLOSED accordion header */
+.accordion-button.collapsed {
+    background-color: #f8f9fa; /* light neutral */
+    color: #333;
+}
+
+/* OPENED accordion header */
+.accordion-button:not(.collapsed) {
+    background-color: #e6f4ee;
+    color: #117a4b;
+    box-shadow: none;
+    font-weight: 600;
+}
+
+/* CONTENT BODY */
+.accordion-body {
+    background-color: #ffffff;
+    border-top: 1px solid rgba(17,122,75,0.15);
+}
+
+/* Remove blue focus */
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+/* Optional: soften default accordion border */
+.accordion-item {
+    border: 1px solid rgba(0,0,0,0.08);
+    overflow: hidden;
+}

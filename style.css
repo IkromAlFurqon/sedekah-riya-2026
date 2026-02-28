@@ -39,7 +39,7 @@ background:
     radial-gradient(900px 500px at 20% 20%, rgba(22,155,95,0.20), transparent 60%),
     radial-gradient(900px 500px at 80% 10%, rgba(17,122,75,0.18), transparent 55%),
     linear-gradient(180deg, #ffffff 0%, var(--green-100) 100%);
-padding-top: 6.5rem;
+padding-top: 5rem;
 padding-bottom: 3.5rem;
 }
 
@@ -101,7 +101,6 @@ color: rgba(255,255,255,0.9);
 .footer a{ color: rgba(255,255,255,0.9); }
 .small-muted{ color: rgba(15,23,42,0.65); }
 
-/* Smooth anchor offset due to fixed navbar */
 section[id]{ scroll-margin-top: 90px; }
 
 .qris-sedekah {
@@ -112,7 +111,7 @@ section[id]{ scroll-margin-top: 90px; }
     font-size: small;
     font-style: italic;
     color: grey;
-  }
+}
 
 .nav-pills .nav-link {
     border-radius: 25px;
@@ -172,3 +171,4 @@ section[id]{ scroll-margin-top: 90px; }
     border-radius: 5px;
     font-size: 20px; /* control icon size */
 }
+

@@ -4,7 +4,7 @@
 const WA_NUMBER = "6289510168715"; // format internasional tanpa + (Indonesia: 62...)
 const BANK_ACCOUNT = "4731648438";
 const TARGET = 5000000; // target rupiah
-let collected = 650000;
+let collected = 1150000;
 
 let expense1 = 0;
 let expense2 = 0;
@@ -190,16 +190,6 @@ document.querySelectorAll("button[data-amount]").forEach(btn => {
     });
 });
 
-// Copy bank account
-el("btnCopyAcc").addEventListener("click", async () => {
-    try{
-    await navigator.clipboard.writeText(BANK_ACCOUNT);
-    toast("Nomor rekening berhasil dicopy ✅");
-    }catch(err){
-    toast("Gagal copy. Silakan blok & copy manual.");
-    }
-});
-
 // Format button (normalize amount)
 el("btnFormat").addEventListener("click", () => {
     const val = Number(el("donationAmount").value || 0);
@@ -208,24 +198,3 @@ el("btnFormat").addEventListener("click", () => {
     el("donationAmount").value = Math.round(val);
     toast("Nominal dirapikan: " + rupiah(Math.round(val)));
 });
-
-// WhatsApp confirm
-
-
-// Demo: tambah collected
-// el("btnAddCollected").addEventListener("click", () => {
-//     const amount = Number(el("donationAmount").value || 0);
-//     if(amount <= 0){ toast("Isi nominal dulu untuk simulasi."); return; }
-//     collected += amount;
-//     setProgress();
-//     toast("Simulasi: terkumpul bertambah " + rupiah(amount) + " ✅");
-// });
-
-// Transparansi buttons
-el("btnDownloadReport").addEventListener("click", () => {
-    alert("Placeholder: nanti kamu ganti jadi link laporan (PDF/Drive).");
-});
-// el("btnUpdateNumbers").addEventListener("click", () => {
-//     setProgress();
-//     toast("Angka direfresh ✅");
-// });

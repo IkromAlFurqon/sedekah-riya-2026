@@ -4,7 +4,7 @@
 const WA_NUMBER = "6289510168715"; // format internasional tanpa + (Indonesia: 62...)
 const BANK_ACCOUNT = "4731648438";
 const TARGET = 5000000; // target rupiah
-let collected = 1150000;
+let collected = 1350000;
 
 let expense1 = 0;
 let expense2 = 0;

@@ -6,7 +6,7 @@ const BANK_ACCOUNT = "4731648438";
 const TARGET = 5500000; // target rupiah
 let collected = 4514002;
 
-let expense1 = 0;
+let expense1 = 500000;
 let expense2 = 0;
 
 // =============================

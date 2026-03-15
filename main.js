@@ -3,11 +3,12 @@
 // =============================
 const WA_NUMBER = "6289510168715"; // format internasional tanpa + (Indonesia: 62...)
 const BANK_ACCOUNT = "4731648438";
-const TARGET = 5500000; // target rupiah
-let collected = 4514002;
+const TARGET = 5800000; // target rupiah
+let collected = 6650004;
 
-let expense1 = 449000;
-let expense2 = 51000;
+let expense1 = 949000;
+let expense2 = 1851000;
+let expense3 = 3850000;
 
 // =============================
 // UTIL
@@ -62,7 +63,7 @@ function setProgress() {
     Math.min(100, Math.round((collected / TARGET) * 100))
   );
 
-  const balance = collected - (expense1 + expense2);
+  const balance = collected - (expense1 + expense2 + expense3);
   const remaining = Math.max(0, TARGET - collected);
 
   // Animate percentage text
@@ -126,6 +127,14 @@ function setProgress() {
     el("tableExpense2"),
     getNumericValue(el("tableExpense2")),
     expense2,
+    800,
+    rupiah
+  );
+
+  animateValue(
+    el("tableExpense3"),
+    getNumericValue(el("tableExpense3")),
+    expense3,
     800,
     rupiah
   );
